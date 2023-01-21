@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="javascript.js"></script>
+        <title>Challenge Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="imagenes/alura.png" alt="logo-alura">
+        </header>
+        <main>
+            <section class = "seccion_1">
+                <div class="contenedorimagen">
+                    <img src="imagenes/keroti.png">
+                </div>
+                <form>
+                    <input class="ingresar-texto" id="textoEncriptado" placeholder="Escribe tu texto aquí">
+                </form>
+                
+                <div class="contenedor-botones">                    
+                    <button class="botonEncriptado" type="button" id="botonEncriptado">Encriptar</button>
+                    <button class="botonDesencriptado" type="button" id="botonDesencriptado">Desencriptar</button>
+                    <button class= "botonCopiar"type="button" id="botonCopiar">Copiar</button>
+                </div>
+            </section>            
+            <section class="seccion_2">
+                <div class="contenedor-img">
+                    <img src="imagenes/sapito.png">
+                </div>
+                <div class="contenedor-img-textoEncriptado">
+                </div>
+                <div class="textoDesencriptado">
+                <textarea name="resultado" id="textoDesencriptado" placeholder="No se encontro ningún mensaje"></textarea>
+                </div>
+            </section>          
+        </main>
+        <script>
+            var btn = document.querySelector("#botonEncriptado");
+            btn.onclick = encriptar;
+            var btn2 = document.querySelector("#botonDesencriptado");
+            btn2.onclick = desencriptar;
+            var btn3 = document.querySelector("#botonCopiar");
+            btn3.onclick = copiar;        
+        </script>
+        <footer> ©Copyrigth | Angie Espitia 2023 </footer>
+    </body>
+      
+</html>
